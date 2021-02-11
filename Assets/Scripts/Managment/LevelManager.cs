@@ -42,8 +42,9 @@ public class LevelManager : MonoBehaviour
     [Header("Messages")]
     [SerializeField] List<String> messages;
 
-    Ring player;
-    Bot bot;
+    [Header("Objects")]
+    [SerializeField] Ring player;
+    [SerializeField] Bot bot;
 
     int playerScore = 0;
     int botScore = 0;
@@ -54,8 +55,6 @@ public class LevelManager : MonoBehaviour
     {
         Physics.gravity = Vector3.down * worldGravitation;
 
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Ring>();
-        bot = FindObjectOfType<Bot>();
         goalsToWinText.text = Convert.ToString(goalsToWin);
         bot.ChangeActive(false);
 

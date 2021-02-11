@@ -1389,6 +1389,8 @@ MonoBehaviour:
   - AWESOME!
   - GREAT!
   - FANTASTIC!
+  player: {fileID: 8164078559088391248}
+  bot: {fileID: 1387354138}
 --- !u!4 &1249335421
 Transform:
   m_ObjectHideFlags: 0
